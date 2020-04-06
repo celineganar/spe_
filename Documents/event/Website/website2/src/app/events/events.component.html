@@ -1,0 +1,23 @@
+<!--The code to display images -->
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h1 class="header col s12 light white-text">EVENTS</h1>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/events.png" alt="Unsplashed background img 2"></div>
+  </div>
+ 
+ <div style=" text-align: center">
+  <a routerLink="/create" class="waves-effect waves-light btn-small position:absolute; top:50%; "><i class="material-icons right">event</i>Create an Event!</a>
+ </div>
+ 
+ <div *ngFor="let event of data" style="text-align:center">
+   <h3 class="teal-text">
+      {{ event.name.text }}
+   </h3>
+   <img  [src]="event.logo.url">
+     <p class="teal-text"> Date: {{ event.start.local }} </p>
+   </div>

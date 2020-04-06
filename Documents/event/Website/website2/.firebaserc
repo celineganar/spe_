@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "saveplanetearth-77ab1": {
+      "hosting": {
+        "website2": [
+          "saveplanetearth-77ab1"
+        ]
+      }
+    }
+  }
+}
